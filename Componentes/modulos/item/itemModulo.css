@@ -1,0 +1,16 @@
+.item {
+   width: 20rem;
+   height: 20rem;
+   background-color: aquamarine;
+   
+ 
+}
+
+.alberteinstein{
+   width: 50%;
+   height: 50%;
+   display: flex;
+   margin: auto ;
+   margin-top: 1rem;
+
+}
