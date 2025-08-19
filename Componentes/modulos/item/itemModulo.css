@@ -1,16 +1,20 @@
 .item {
    width: 20rem;
-   height: 20rem;
+   height: 30rem;
    background-color: aquamarine;
+   box-shadow: 0 4px 15px rgb(0, 0, 0);
+   
+   
    
  
 }
-
-.alberteinstein{
-   width: 50%;
-   height: 50%;
-   display: flex;
-   margin: auto ;
-   margin-top: 1rem;
+.verde{
+   
+   background-color: green;
+}
+.iamgenes{
+   margin-left: 1.5rem;
+   width: 17rem;
+   height: 17rem;
 
 }
