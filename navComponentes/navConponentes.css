@@ -1,0 +1,32 @@
+.nav-papa{
+    margin-top: 5rem;
+    height: 7rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+}
+.div-1 img{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+.div-2 img{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid black;
+
+}
+.div-3 img{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid black;
+
+}
+.div-4 img{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid black;
+
+}
