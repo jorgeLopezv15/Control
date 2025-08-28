@@ -1,8 +1,10 @@
 .item {
-   width: 20rem;
+   width: 25rem;
    height: 30rem;
-   background-color: aquamarine;
+   background-color: white;
    box-shadow: 0 4px 15px rgb(0, 0, 0);
+   border-radius: 10px;
+   border: 1px solid black;
    
    
    
@@ -10,11 +12,31 @@
 }
 .verde{
    
-   background-color: green;
+   background-color: greenyellow ;
 }
 .iamgenes{
    margin-left: 1.5rem;
    width: 17rem;
    height: 17rem;
+   padding: 10px;
+   padding-left: 50px;
 
+}
+.tituloitem{
+   font-size: 1rem;
+   margin: auto;
+   padding: 10px;
+   padding-left: 40px;
+   font-family: sans-serif;
+
+}
+.descripcion{
+   font-family: sans-serif;
+   padding: 10px;
+   
+}
+.precioo{
+   padding-left: 10px;
+   color: green;
+   
 }

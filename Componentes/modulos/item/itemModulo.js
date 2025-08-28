@@ -1,3 +1,4 @@
+
 export function item(title,image, description, price) {
 
     let item = document.createElement('div');
@@ -5,6 +6,7 @@ export function item(title,image, description, price) {
 
 
     let titulo = document.createElement('h1');
+    titulo.className = "tituloitem"
     titulo.textContent = title;
     item.appendChild(titulo);
 
@@ -20,6 +22,7 @@ export function item(title,image, description, price) {
    item.appendChild(descriptions);
 
    let precio=document.createElement("p");
+   precio.className = "precioo"
    precio.textContent = price;
    item.appendChild(precio);
 
@@ -29,10 +32,13 @@ export function item(title,image, description, price) {
 
     item.addEventListener('click', ()=>{
         item.classList.add("verde");
-        let rHeader = document.querySelector('.header');
-        rHeader.classList.add("ocultar");
-    })
 
+        let miCarrito = localStorage.getItem('carritolista');
+        console.log(miCarrito);
+
+ 
+        
+    });
 
 
 

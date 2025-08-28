@@ -7,6 +7,21 @@ function seccion(){
 
 let seccion = document.createElement("section");
 
+
+       let listaDeCompras = localStorage.getItem("carrolista");
+
+        if(! listaDeCompras){
+            listaDeCompras = [];
+            localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
+
+        }else{
+            listaDeCompras = JSON.parse(listaDeCompras);
+        }
+
+        console.log(listaDeCompras);
+
+
+
 seccion.appendChild(header());
 
 
@@ -15,6 +30,8 @@ seccion.appendChild(header());
 seccion.appendChild(seccion1());
 
 seccion.appendChild(nav());
+
+
 
 
 return seccion;

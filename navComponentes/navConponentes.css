@@ -1,32 +1,38 @@
-.nav-papa{
-    margin-top: 5rem;
-    height: 7rem;
-    border: 1px solid black;
+.nav-papa {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
     background-color: antiquewhite;
-}
-.div-1 img{
-    height: 7rem;
-    width: 7rem;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    gap: 20rem;
     border: 1px solid black;
 }
-.div-2 img{
-    height: 7rem;
-    width: 7rem;
-    border: 1px solid black;
 
+.nav-papa div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-.div-3 img{
-    height: 7rem;
-    width: 7rem;
-    border: 1px solid black;
-
+.caja{
+    width: 5rem;
+    height: 5rem;
 }
-.div-4 img{
-    height: 7rem;
-    width: 7rem;
-    border: 1px solid black;
 
+.nav-papa img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 1px solid black;
+}
+
+.nav-papa img:hover {
+    transform: scale(1.2);
 }
