@@ -1,4 +1,4 @@
-
+import { guadarProducto, obtenerProducto } from "../../../control/miLocalStorange.js";
 export function item(title,image, description, price) {
 
     let item = document.createElement('div');
@@ -26,19 +26,23 @@ export function item(title,image, description, price) {
    precio.textContent = price;
    item.appendChild(precio);
 
-
+ 
+    let carritoLocalStorange = obtenerProducto();
+    console.log('carrito', carritoLocalStorange);
 
 
 
     item.addEventListener('click', ()=>{
         item.classList.add("verde");
-
-        let miCarrito = localStorage.getItem('carritolista');
-        console.log(miCarrito);
-
- 
-        
+        carritoLocalStorange.push("nuevo elemento");
+        guadarProducto(carritoLocalStorange);
+        console.log("Producto LocalStorange");
+        location.reload();
     });
+
+
+
+    
 
 
 

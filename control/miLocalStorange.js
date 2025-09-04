@@ -1,13 +1,11 @@
-import { productos } from "../database/productos";
+const CARRITO = 'carrito';
 
-const LOCAL_STORAGE_KEY_ASSIGNMENTS = 'lista_tareas';
-
-function guardarAsignaciones(asignaciones) {
-localStorage.setItem(LOCAL_STORAGE_KEY_ASSIGNMENTS, JSON.stringify(productos));
+function guadarProducto(CARRITO) {
+localStorage.setItem(CARRITO, JSON.stringify(CARRITO));
 }
 
-function obtenerAsignaciones() {
-return JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY_ASSIGNMENTS)) || [];
+function obtenerProducto() {
+return JSON.parse(localStorage.getItem(CARRITO)) || [];
 }
 
-export { LOCAL_STORAGE_KEY_ASSIGNMENTS, guardarProducto, obtenerProducto };
+export { CARRITO, guadarProducto, obtenerProducto };

@@ -27,7 +27,7 @@
 .nav-papa img {
     width: 4rem;
     height: 4rem;
-    object-fit: contain;
+   
     cursor: pointer;
     transition: transform 0.2s ease;
     border: 1px solid black;
@@ -35,4 +35,13 @@
 
 .nav-papa img:hover {
     transform: scale(1.2);
+}
+.circulo{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
+    margin-top: -25px;
+    margin-left: 40px;
 }

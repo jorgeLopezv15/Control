@@ -1,4 +1,4 @@
-function header(){
+export function header(){
 
 
   let header = document.createElement("header");
@@ -37,4 +37,3 @@ function header(){
     
 }
 
-export { header }
